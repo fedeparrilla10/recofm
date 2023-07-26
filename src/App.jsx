@@ -1,12 +1,12 @@
+import Home from './pages/Home/Home';
 import './App.css';
 
 const App = () => {
-
   return (
     <>
-      <h1>Hello World!</h1>
+      <Home />
     </>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,27 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 72px;
+}
+
+.header__subtitle {
+  font-size: 28px;
+}
+
+.header__subtitle--strong {
+  font-weight: bold;
+}

@@ -16,10 +16,13 @@
 
 .header__title {
   font-size: 72px;
+  font-weight: 900;
+  font-family: var(--title-font);
 }
 
 .header__subtitle {
   font-size: 28px;
+  font-family: var(--title-font);
 }
 
 .header__subtitle--strong {

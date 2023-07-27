@@ -5,4 +5,5 @@
   justify-content: center;
   flex-direction: column;
   background-color: #100015;
+  background-image: url('./assets/main-bg.png');
 }

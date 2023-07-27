@@ -1,11 +1,10 @@
 .button {
   cursor: pointer;
-  color: #fff;
+  color: var(--primary-color);
   background: linear-gradient(90deg, #7871f7 0%, #641eaa 100%);
   border: none;
   border-radius: 3px;
   padding: 15px;
-  font-family: var(--title-font);
   text-transform: uppercase;
   font-size: 20px;
 }

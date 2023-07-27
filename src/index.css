@@ -2,6 +2,7 @@
 
 :root {
   --title-font: 'Lexend', sans-serif;
+  --primary-color: #ffffff;
 }
 
 /* makes sizing simpler */
@@ -22,6 +23,10 @@
 }
 
 /* min body height */
+
+html {
+  font-family: var(--title-font);
+}
 
 body {
   min-height: 100vh;

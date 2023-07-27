@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #100015;
 }
 
 .header {
@@ -18,13 +19,16 @@
   font-size: 72px;
   font-weight: 900;
   font-family: var(--title-font);
+  color: #ffffff;
 }
 
 .header__subtitle {
   font-size: 28px;
   font-family: var(--title-font);
+  color: #fff;
 }
 
 .header__subtitle--strong {
   font-weight: bold;
+  font-style: italic;
 }

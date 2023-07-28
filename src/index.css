@@ -26,6 +26,7 @@
 
 html {
   font-family: var(--title-font);
+  color: var(--primary-color);
 }
 
 body {

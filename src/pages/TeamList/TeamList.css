@@ -1,4 +1,45 @@
 .teamlist {
+  margin: 20px 15px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+
+.teamlist__container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamlist__info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.teamlist__logo {
+  margin-top: 20px;
+}
+
+/* .teamlist__logo--division {
+  display: none;
+} */
+
+@media (min-width: 1280px) {
+  .teamlist {
+    gap: 80px;
+  }
+
+  .teamlist__container {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .teamlist__details {
+    width: 50%;
+  }
 }

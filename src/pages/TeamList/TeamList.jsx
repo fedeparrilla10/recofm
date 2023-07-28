@@ -1,21 +1,21 @@
 import teams from '../../data/teams.json';
 import './TeamList.css';
 
-const TeamList = () => {
-  const allTeams = teams.map((team) => {
-    const teamList = team.teams;
-    return teamList.map((eachTeam) => {
-      return (
-        <article className="teamlist__container">
-          <h2>{eachTeam.name}</h2>
-          <img src={eachTeam.logo} alt={`Escudo de ${eachTeam.name}`} />
-          <h3>{eachTeam.country}</h3>
-          <h3>{eachTeam.division.name}</h3>
-          <img src={eachTeam.division.img} />
-          <p>{eachTeam.details}</p>
-        </article>
-      );
-    });
+const TeamList = ({ teams }) => {
+  const allTeams = teams.map((eachTeam) => {
+    return (
+      <article key={eachTeam.id} className="teamlist__container">
+        <div className="teamlist__info-container">
+          <h2 className="teamlist__name">{eachTeam.name}</h2>
+          <img
+            className="teamlist__logo teamlist__logo--team"
+            src={eachTeam.logo}
+            alt={`Escudo de ${eachTeam.name}`}
+          />
+        </div>
+        <p className="teamlist__details">{eachTeam.details}</p>
+      </article>
+    );
   });
 
   return <section className="teamlist">{allTeams}</section>;

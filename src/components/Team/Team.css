@@ -1,0 +1,33 @@
+.team__container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team__info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.team__logo {
+  margin-top: 20px;
+}
+
+/* .team__logo--division {
+    display: none;
+  } */
+
+@media (min-width: 1280px) {
+  .team__container {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .team__details {
+    width: 50%;
+  }
+}

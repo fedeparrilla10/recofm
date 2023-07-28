@@ -1,3 +1,4 @@
 .teamlist {
-  background-color: #9fcfff;
+  display: flex;
+  flex-direction: column;
 }

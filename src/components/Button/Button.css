@@ -1,8 +1,9 @@
 .button {
   cursor: pointer;
   color: var(--primary-color);
-  background: linear-gradient(90deg, #7871f7 0%, #641eaa 100%);
-  border: none;
+  background: transparent;
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #09daff 0%, #641eaa 100%) 1;
   border-radius: 5px;
   text-transform: uppercase;
 }

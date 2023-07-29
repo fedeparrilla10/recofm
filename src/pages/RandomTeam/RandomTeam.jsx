@@ -1,12 +1,13 @@
 import { useState, useEffect, useContext } from 'react';
 import Button from '../../components/Button/Button';
-import Team from '../../components/Team/Team';
+import TeamProfile from '../../components/TeamProfile/TeamProfile';
 import './RandomTeam.css';
 import { TeamsContext } from '../../context/TeamsContext';
 
 const RandomTeam = () => {
   const { teams } = useContext(TeamsContext);
   const [team, setTeam] = useState('');
+  const [loading, setLoading] = useState(true);
 
   const randomTeam = () => {
     const randomIndex = Math.floor(Math.random() * teams.length);
@@ -14,14 +15,17 @@ const RandomTeam = () => {
   };
 
   useEffect(() => {
-    randomTeam();
+    if (teams.length > 0) {
+      setLoading(false);
+      randomTeam();
+    }
   }, [teams]);
 
   return (
-    <div>
-      <Button onClick={randomTeam} name="Otro Equipo" />
-      {team && <Team team={team} />}
-    </div>
+    <section className="randomizer">
+      {!loading && team && <TeamProfile team={team} />}
+      {!loading && <Button onClick={randomTeam} name="Otro Equipo" />}
+    </section>
   );
 };
 

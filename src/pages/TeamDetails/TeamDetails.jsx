@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import Team from '../../components/Team/Team';
+import TeamProfile from '../../components/TeamProfile/TeamProfile';
 import './TeamDetails.css';
 import { TeamsContext } from '../../context/TeamsContext';
 
@@ -13,7 +13,7 @@ const TeamDetails = () => {
   if (team)
     return (
       <>
-        <Team team={team} />
+        <TeamProfile team={team} />
       </>
     );
 };

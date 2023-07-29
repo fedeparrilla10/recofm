@@ -3,7 +3,7 @@
   color: var(--primary-color);
   background: linear-gradient(90deg, #7871f7 0%, #641eaa 100%);
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   text-transform: uppercase;
 }
 

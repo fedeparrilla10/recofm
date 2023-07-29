@@ -8,9 +8,9 @@ const TeamDetails = ({ teams }) => {
 
   if (team)
     return (
-      <div>
+      <>
         <Team team={team} />
-      </div>
+      </>
     );
 };
 

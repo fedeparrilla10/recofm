@@ -3,13 +3,13 @@ import Button from '../../components/Button/Button';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
-const Home = ({ randomTeam }) => {
+const Home = () => {
   return (
     <main className="home__container">
       <Header />
 
       <div className="buttons">
-        <Link to={`team/${randomTeam()}`}>
+        <Link to={'random_team'}>
           <Button name="Randomizer" />
         </Link>
         <Button name="Recomendaciones" />

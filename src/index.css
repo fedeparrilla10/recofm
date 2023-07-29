@@ -41,3 +41,13 @@ video {
   display: block;
   max-width: 100%;
 }
+
+ul {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: var(--primary-color);
+  text-decoration: none;
+}

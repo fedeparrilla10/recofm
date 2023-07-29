@@ -1,8 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import Team from '../../components/Team/Team';
 import './RandomTeam.css';
+import { TeamsContext } from '../../context/TeamsContext';
 
-const RandomTeam = ({ teams }) => {
+const RandomTeam = () => {
+  const { teams } = useContext(TeamsContext);
+
   const [team, setTeam] = useState('');
 
   const randomTeam = () => {

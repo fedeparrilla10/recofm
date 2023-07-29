@@ -1,5 +1,5 @@
 .home__container {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   gap: 25px;
@@ -41,6 +41,10 @@
 }
 
 @media (min-width: 1280px) {
+  .home__container {
+    height: 80vh;
+  }
+
   .header__subtitle--strong {
     display: inline;
   }

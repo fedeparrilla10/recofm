@@ -1,3 +1,19 @@
-.profile__stadium-img {
-  border-radius: 30px;
+.profile {
+  display: flex;
+}
+
+.profile__team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__stadium__img {
+  width: 600px;
+  height: auto;
+  object-fit: cover;
+}
+
+.profile__kits__img {
+  height: 180px;
 }

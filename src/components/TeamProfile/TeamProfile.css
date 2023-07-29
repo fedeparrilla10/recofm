@@ -2,18 +2,26 @@
   display: flex;
 }
 
-.profile__team {
+.profile__main-info {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.profile__stadium__img {
+.profile__stadium {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stadium__img {
+  border-radius: 30px;
   width: 600px;
   height: auto;
   object-fit: cover;
 }
 
-.profile__kits__img {
+.kit {
   height: 180px;
 }

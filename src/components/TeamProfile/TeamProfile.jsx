@@ -3,28 +3,30 @@ import './TeamProfile.css';
 const TeamProfile = ({ team }) => {
   return (
     <article className="profile">
-      <div className="profile__team">
-        <h2 className="profile__team__name">{team.name}</h2>
+      <div className="profile__main-info">
+        <h2 className="team__name">{team.name}</h2>
         <img
-          className="profile__team__logo"
+          className="team__logo"
           src={team.logo}
           alt={`Escudo de ${team.name}`}
         />
       </div>
 
-      <div>
-        <h4 className="profile__stadium__name">{team.stadium.name}</h4>
+      <div className="stadium">
+        <h4 className="stadium__name">{team.stadium.name}</h4>
         <img
-          className="profile__stadium__img"
+          className="stadium__img"
           src={team.stadium.img}
           alt={`Escudo de ${team.name}`}
         />
       </div>
 
-      <div>
-        <img className="profile__kits__img" src={team.kits.home} alt="" />
-        <img className="profile__kits__img" src={team.kits.away} alt="" />
-        <img className="profile__kits__img" src={team.kits.third} alt="" />
+      <div className="kits">
+        <img className="kit" src={team.kits.home} alt="Primera equipación" />
+        <img className="kit" src={team.kits.away} alt="Segunda equipación" />
+        {team.kits.third && (
+          <img className="kit" src={team.kits.third} alt="Tercera equipación" />
+        )}
       </div>
     </article>
   );

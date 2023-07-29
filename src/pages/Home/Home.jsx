@@ -10,11 +10,11 @@ const Home = () => {
 
       <div className="buttons">
         <Link to={'random_team'}>
-          <Button name="Randomizer" />
+          <Button name="Randomizer" className="button button--big" />
         </Link>
 
         <Link to={'teams'}>
-          <Button name="Recomendaciones" />
+          <Button name="Recomendaciones" className="button button--big" />
         </Link>
       </div>
     </main>

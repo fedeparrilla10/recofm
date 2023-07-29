@@ -1,8 +1,8 @@
 import './Button.css';
 
-const Button = ({ name, onClick }) => {
+const Button = ({ name, onClick, className }) => {
   return (
-    <button className="button" onClick={onClick}>
+    <button className={className} onClick={onClick}>
       {name}
     </button>
   );

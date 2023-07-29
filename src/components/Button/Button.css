@@ -4,7 +4,15 @@
   background: linear-gradient(90deg, #7871f7 0%, #641eaa 100%);
   border: none;
   border-radius: 3px;
-  padding: 15px;
   text-transform: uppercase;
+}
+
+.button--big {
+  padding: 15px;
   font-size: 20px;
+}
+
+.button--medium {
+  padding: 10px;
+  font-size: 16px;
 }

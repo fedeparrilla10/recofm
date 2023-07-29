@@ -24,7 +24,13 @@ const RandomTeam = () => {
   return (
     <section className="randomizer">
       {!loading && team && <TeamProfile team={team} />}
-      {!loading && <Button onClick={randomTeam} name="Otro Equipo" />}
+      {!loading && (
+        <Button
+          onClick={randomTeam}
+          name="Otro Equipo"
+          className="button button--medium"
+        />
+      )}
     </section>
   );
 };

@@ -12,9 +12,9 @@ const TeamDetails = () => {
 
   if (team)
     return (
-      <>
+      <section className="team-details">
         <TeamProfile team={team} />
-      </>
+      </section>
     );
 };
 

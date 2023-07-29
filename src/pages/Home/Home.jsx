@@ -12,7 +12,10 @@ const Home = () => {
         <Link to={'random_team'}>
           <Button name="Randomizer" />
         </Link>
-        <Button name="Recomendaciones" />
+
+        <Link to={'teams'}>
+          <Button name="Recomendaciones" />
+        </Link>
       </div>
     </main>
   );

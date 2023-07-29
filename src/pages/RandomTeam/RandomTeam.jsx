@@ -1,11 +1,11 @@
 import { useState, useEffect, useContext } from 'react';
+import Button from '../../components/Button/Button';
 import Team from '../../components/Team/Team';
 import './RandomTeam.css';
 import { TeamsContext } from '../../context/TeamsContext';
 
 const RandomTeam = () => {
   const { teams } = useContext(TeamsContext);
-
   const [team, setTeam] = useState('');
 
   const randomTeam = () => {
@@ -19,7 +19,7 @@ const RandomTeam = () => {
 
   return (
     <div>
-      <button onClick={randomTeam}>click</button>
+      <Button onClick={randomTeam} name="Otro Equipo" />
       {team && <Team team={team} />}
     </div>
   );

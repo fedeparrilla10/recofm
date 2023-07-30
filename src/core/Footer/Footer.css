@@ -1,11 +1,12 @@
 .footer {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   margin-top: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
   text-align: center;
-  flex-direction: column;
   color: var(--primary-color);
   border-top: 1px solid;
   border-image: linear-gradient(45deg, #09daff 0%, #641eaa 100%) 1;

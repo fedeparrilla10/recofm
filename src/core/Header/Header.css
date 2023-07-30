@@ -8,7 +8,7 @@
 }
 
 .header__title {
-  font-size: 72px;
+  font-size: 75px;
   font-weight: 900;
   color: var(--primary-color);
 }
@@ -25,6 +25,11 @@
 }
 
 @media (min-width: 1280px) {
+  .header__title {
+    font-size: 120px;
+    letter-spacing: 10px;
+  }
+
   .header__subtitle--strong {
     display: inline;
   }

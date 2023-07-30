@@ -4,7 +4,9 @@ import './NavBar.css';
 const NavBar = () => {
   return (
     <nav className="navbar">
-      <h2>RecoFM</h2>
+      <NavLink to="/">
+        <h2>RecoFM</h2>
+      </NavLink>
 
       <ul className="navbar__list">
         <li>

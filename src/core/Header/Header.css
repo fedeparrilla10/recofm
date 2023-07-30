@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 72px;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.header__subtitle {
+  font-size: 28px;
+}
+
+.header__subtitle--strong {
+  font-weight: bold;
+  font-style: italic;
+  display: none;
+  color: var(--lightblue);
+}
+
+@media (min-width: 1280px) {
+  .header__subtitle--strong {
+    display: inline;
+  }
+}

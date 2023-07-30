@@ -8,32 +8,6 @@
   justify-content: center;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 30px;
-  text-align: center;
-}
-
-.header__title {
-  font-size: 72px;
-  font-weight: 900;
-  color: var(--primary-color);
-}
-
-.header__subtitle {
-  font-size: 28px;
-  color: var(--primary-color);
-}
-
-.header__subtitle--strong {
-  font-weight: bold;
-  font-style: italic;
-  display: none;
-}
-
 .buttons {
   display: flex;
   flex-direction: column;
@@ -44,10 +18,6 @@
 @media (min-width: 1280px) {
   .home__container {
     height: 80vh;
-  }
-
-  .header__subtitle--strong {
-    display: inline;
   }
 
   .buttons {

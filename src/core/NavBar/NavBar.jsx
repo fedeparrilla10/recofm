@@ -13,6 +13,9 @@ const NavBar = () => {
         <li>
           <NavLink>About Me</NavLink>
         </li>
+      </ul>
+
+      <ul className="navbar__list">
         <li>
           <NavLink>Contacto</NavLink>
         </li>

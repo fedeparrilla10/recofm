@@ -8,8 +8,6 @@
   gap: 10px;
   text-align: center;
   color: var(--primary-color);
-  border-top: 1px solid;
-  border-image: linear-gradient(45deg, #09daff 0%, #641eaa 100%) 1;
 }
 
 .footer__developer {

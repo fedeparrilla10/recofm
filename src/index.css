@@ -26,6 +26,7 @@
 /* min body height */
 
 html {
+  height: 100%;
   font-family: var(--title-font);
   color: var(--primary-color);
 }

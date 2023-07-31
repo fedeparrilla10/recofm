@@ -15,6 +15,13 @@
   gap: 20px;
 }
 
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 20px;
+}
+
 @media (min-width: 1280px) {
   .home {
     flex-grow: 1;
@@ -23,5 +30,12 @@
   .buttons {
     flex-direction: row;
     gap: 25px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 20px;
   }
 }

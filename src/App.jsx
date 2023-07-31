@@ -1,11 +1,10 @@
 import NavBar from './core/NavBar/NavBar';
 import { Route, Routes } from 'react-router-dom';
-import axios from 'axios';
 import Home from './pages/Home/Home';
 import TeamList from './pages/TeamList/TeamList';
 import TeamDetails from './pages/TeamDetails/TeamDetails';
 import RandomTeam from './pages/RandomTeam/RandomTeam';
-import Footer from './core/Footer/Footer';
+// import Footer from './core/Footer/Footer';
 import './App.css';
 
 const App = () => {
@@ -18,7 +17,7 @@ const App = () => {
         <Route path="team/:id" element={<TeamDetails />} />
         <Route path="random_team" element={<RandomTeam />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

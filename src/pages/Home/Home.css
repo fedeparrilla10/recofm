@@ -1,4 +1,4 @@
-.home__container {
+.home {
   flex-grow: 1;
   width: 100%;
   display: flex;
@@ -16,11 +16,12 @@
 }
 
 @media (min-width: 1280px) {
-  .home__container {
+  .home {
     flex-grow: 1;
   }
 
   .buttons {
     flex-direction: row;
+    gap: 25px;
   }
 }

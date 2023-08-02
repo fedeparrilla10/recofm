@@ -1,0 +1,17 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 20px;
+}
+
+@media (min-width: 1280px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    gap: 20px;
+  }
+}

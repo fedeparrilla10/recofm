@@ -1,23 +1,20 @@
 import { useState, useEffect, useContext } from 'react';
+import { useParams } from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import TeamProfile from '../../components/TeamProfile/TeamProfile';
 import './RandomTeam.css';
 import { TeamsContext } from '../../context/TeamsContext';
 
-const RandomTeam = () => {
+const RandomTeam = ({ team, randomTeam, randomFastSave }) => {
   const { teams } = useContext(TeamsContext);
-  const [team, setTeam] = useState('');
   const [loading, setLoading] = useState(true);
-
-  const randomTeam = () => {
-    const randomIndex = Math.floor(Math.random() * teams.length);
-    setTeam(teams[randomIndex]);
-  };
+  const { type } = useParams();
 
   useEffect(() => {
     if (teams.length > 0) {
       setLoading(false);
-      randomTeam();
+      type === 'all' && randomTeam();
+      type === 'fast' && randomFastSave();
     }
   }, [teams]);
 
@@ -26,7 +23,13 @@ const RandomTeam = () => {
       {!loading && team && <TeamProfile team={team} />}
       {!loading && (
         <Button
-          onClick={randomTeam}
+          onClick={() => {
+            if (type === 'all') {
+              randomTeam();
+            } else if (type === 'fast') {
+              randomFastSave();
+            }
+          }}
           name="Otro Equipo"
           className="button button--medium"
         />

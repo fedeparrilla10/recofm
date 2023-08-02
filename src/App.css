@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #0c0010;
-  background-image: linear-gradient(
+  background-color: #130920;
+  /* background-image: linear-gradient(
     220deg,
     hsl(262deg 87% 6%) 0%,
     hsl(263deg 86% 6%) 13%,
@@ -29,5 +29,5 @@
     hsl(269deg 76% 8%) 81%,
     hsl(270deg 76% 8%) 87%,
     hsl(270deg 75% 8%) 100%
-  );
+  ); */
 }

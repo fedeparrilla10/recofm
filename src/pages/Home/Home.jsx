@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import Header from '../../core/Header/Header';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
-import { Link } from 'react-router-dom';
+
 import './Home.css';
 
 const Home = () => {

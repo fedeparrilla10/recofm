@@ -4,15 +4,9 @@ import TeamProfile from '../../components/TeamProfile/TeamProfile';
 import './RandomTeam.css';
 import { TeamsContext } from '../../context/TeamsContext';
 
-const RandomTeam = () => {
+const RandomTeam = ({ team, randomTeam }) => {
   const { teams } = useContext(TeamsContext);
-  const [team, setTeam] = useState('');
   const [loading, setLoading] = useState(true);
-
-  const randomTeam = () => {
-    const randomIndex = Math.floor(Math.random() * teams.length);
-    setTeam(teams[randomIndex]);
-  };
 
   useEffect(() => {
     if (teams.length > 0) {

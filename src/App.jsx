@@ -13,18 +13,16 @@ const App = () => {
   const { teams } = useContext(TeamsContext);
   const [team, setTeam] = useState('');
 
-  const randomTeam = () => {
-    const randomIndex = Math.floor(Math.random() * teams.length);
-    setTeam(teams[randomIndex]);
-  };
+  const randomTeam = (saveType = null) => {
+    let filteredTeams = teams;
 
-  const randomFastSave = () => {
-    const fastTeam = teams.filter((team) => team.difficulty === 'fast');
-    const randomIndex = Math.floor(Math.random() * fastTeam.length);
-    setTeam(fastTeam[randomIndex]);
-  };
+    if (saveType !== null) {
+      filteredTeams = teams.filter((team) => team.difficulty === saveType);
+    }
 
-  const randomLongSave = () => {};
+    const randomIndex = Math.floor(Math.random() * filteredTeams.length);
+    setTeam(filteredTeams[randomIndex]);
+  };
 
   const randomBizarreSave = () => {};
 
@@ -37,13 +35,7 @@ const App = () => {
         <Route path="team/:id" element={<TeamDetails />} />
         <Route
           path="random_team/:type"
-          element={
-            <RandomTeam
-              team={team}
-              randomTeam={randomTeam}
-              randomFastSave={randomFastSave}
-            />
-          }
+          element={<RandomTeam team={team} randomTeam={randomTeam} />}
         />
       </Routes>
       {/* <Footer /> */}

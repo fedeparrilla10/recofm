@@ -4,8 +4,14 @@ import Button from '../../components/Button/Button';
 import TeamProfile from '../../components/TeamProfile/TeamProfile';
 import './RandomTeam.css';
 import { TeamsContext } from '../../context/TeamsContext';
+import {
+  ALL_SAVES,
+  FAST_SAVES,
+  LONG_SAVES,
+  BIZARRE_SAVES,
+} from '../../constants/filters';
 
-const RandomTeam = ({ team, randomTeam, randomFastSave }) => {
+const RandomTeam = ({ team, randomTeam }) => {
   const { teams } = useContext(TeamsContext);
   const [loading, setLoading] = useState(true);
   const { type } = useParams();
@@ -13,8 +19,10 @@ const RandomTeam = ({ team, randomTeam, randomFastSave }) => {
   useEffect(() => {
     if (teams.length > 0) {
       setLoading(false);
-      type === 'all' && randomTeam();
-      type === 'fast' && randomFastSave();
+      type === ALL_SAVES && randomTeam();
+      type === FAST_SAVES && randomTeam(FAST_SAVES);
+      type === LONG_SAVES && randomTeam(LONG_SAVES);
+      type === BIZARRE_SAVES && randomTeam(BIZARRE_SAVES);
     }
   }, [teams]);
 
@@ -24,10 +32,10 @@ const RandomTeam = ({ team, randomTeam, randomFastSave }) => {
       {!loading && (
         <Button
           onClick={() => {
-            if (type === 'all') {
+            if (type === ALL_SAVES) {
               randomTeam();
-            } else if (type === 'fast') {
-              randomFastSave();
+            } else if (type === FAST_SAVES) {
+              randomTeam(FAST_SAVES);
             }
           }}
           name="Otro Equipo"

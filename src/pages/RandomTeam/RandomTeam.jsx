@@ -8,7 +8,7 @@ import {
   ALL_SAVES,
   FAST_SAVES,
   LONG_SAVES,
-  BIZARRE_SAVES,
+  LLM_SAVES,
 } from '../../constants/filters';
 
 const RandomTeam = ({ team, randomTeam }) => {
@@ -22,7 +22,7 @@ const RandomTeam = ({ team, randomTeam }) => {
       type === ALL_SAVES && randomTeam();
       type === FAST_SAVES && randomTeam(FAST_SAVES);
       type === LONG_SAVES && randomTeam(LONG_SAVES);
-      type === BIZARRE_SAVES && randomTeam(BIZARRE_SAVES);
+      type === LLM_SAVES && randomTeam(LLM_SAVES);
     }
   }, [teams]);
 
@@ -36,6 +36,10 @@ const RandomTeam = ({ team, randomTeam }) => {
               randomTeam();
             } else if (type === FAST_SAVES) {
               randomTeam(FAST_SAVES);
+            } else if (type === LONG_SAVES) {
+              randomTeam(LONG_SAVES);
+            } else if (type === LLM_SAVES) {
+              randomTeam(LLM_SAVES);
             }
           }}
           name="Otro Equipo"

@@ -24,8 +24,6 @@ const App = () => {
     setTeam(filteredTeams[randomIndex]);
   };
 
-  const randomBizarreSave = () => {};
-
   return (
     <div className="container">
       <NavBar />

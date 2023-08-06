@@ -1,6 +1,7 @@
 .cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 70%;
   gap: 20px;
 }

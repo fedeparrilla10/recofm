@@ -1,4 +1,7 @@
 import TeamMainInfo from '../TeamMainInfo/TeamMainInfo';
+import Stadium from '../Stadium/Stadium';
+import Kits from '../Kits/Kits';
+import KeyPlayers from '../KeyPlayers/KeyPlayers';
 import './TeamProfile.css';
 
 const TeamProfile = ({ team }) => {
@@ -9,14 +12,7 @@ const TeamProfile = ({ team }) => {
       <TeamMainInfo team={team} />
 
       <div className="profile__content">
-        <div className="stadium">
-          <h4 className="stadium__name">{team.stadium.name}</h4>
-          <img
-            className="stadium__img"
-            src={team.stadium.img}
-            alt={`Estadio de ${team.name}`}
-          />
-        </div>
+        <Stadium team={team} />
 
         <div className="details">
           <div className="details__long">
@@ -25,51 +21,8 @@ const TeamProfile = ({ team }) => {
         </div>
 
         <div className="first-team-details">
-          <div className="kits">
-            <div className="kit">
-              <h3>Local</h3>
-              <img
-                className="kit__img"
-                src={team.kits.home}
-                alt="Primera equipación"
-              />
-            </div>
-            <div className="kit">
-              <h3>Visitante</h3>
-              <img
-                className="kit__img"
-                src={team.kits.away}
-                alt="Segunda equipación"
-              />
-            </div>
-            {team.kits.third && (
-              <div className="kit">
-                <h3>Alternativa</h3>
-                <img
-                  className="kit__img"
-                  src={team.kits.third}
-                  alt="Tercera equipación"
-                />
-              </div>
-            )}
-          </div>
-
-          <div className="key-players">
-            <div className="players">
-              {team.key_players.map((player, i) => {
-                return (
-                  <div className="player" key={i}>
-                    <p className="player__name">{player.name}</p>
-                    <img
-                      className="player__img"
-                      src={player.img}
-                      alt={`Foto de ${player.name}`}
-                    />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          <Kits team={team} />
+          <KeyPlayers team={team} />
         </div>
       </div>
     </article>

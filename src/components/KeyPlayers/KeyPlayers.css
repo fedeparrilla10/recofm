@@ -1,0 +1,21 @@
+.key-players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.players {
+  display: flex;
+  flex-direction: row;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.player__img {
+  height: 150px;
+}

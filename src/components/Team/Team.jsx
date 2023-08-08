@@ -5,7 +5,7 @@ import './Team.css';
 const Team = ({ team }) => {
   return (
     <article className="team__container">
-      <div className="team__main-info">
+      <div className="team__info">
         <h2 className="team__name">{team.name}</h2>
         <img
           className="team__logo"

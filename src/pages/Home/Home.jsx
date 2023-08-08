@@ -3,7 +3,6 @@ import Header from '../../core/Header/Header';
 import Button from '../../components/Button/Button';
 import CardList from '../../components/CardList/CardList';
 import { ALL_SAVES } from '../../constants/filters';
-
 import './Home.css';
 
 const Home = () => {

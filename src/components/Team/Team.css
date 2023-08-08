@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.team__main-info {
+.team__info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,10 +16,6 @@
 .team__logo {
   margin-top: 20px;
 }
-
-/* .team__logo--division {
-    display: none;
-  } */
 
 @media (min-width: 1280px) {
   .team__container {

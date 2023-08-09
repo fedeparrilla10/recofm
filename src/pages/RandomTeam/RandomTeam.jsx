@@ -10,6 +10,7 @@ import {
   LONG_SAVES,
   LLM_SAVES,
 } from '../../constants/filters';
+import { motion } from 'framer-motion';
 
 const RandomTeam = ({ team, randomTeam }) => {
   const { teams } = useContext(TeamsContext);
@@ -27,7 +28,12 @@ const RandomTeam = ({ team, randomTeam }) => {
   }, [teams]);
 
   return (
-    <section className="randomizer">
+    <motion.section
+      className="randomizer"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.1 } }}
+    >
       {!loading && team && <TeamProfile team={team} />}
       {!loading && (
         <Button
@@ -46,7 +52,7 @@ const RandomTeam = ({ team, randomTeam }) => {
           className="button button--medium"
         />
       )}
-    </section>
+    </motion.section>
   );
 };
 

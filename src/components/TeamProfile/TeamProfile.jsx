@@ -4,10 +4,16 @@ import Kits from '../Kits/Kits';
 import KeyPlayers from '../KeyPlayers/KeyPlayers';
 import TeamLongDetails from '../TeamLongDetails/TeamLongDetails';
 import './TeamProfile.css';
+import { motion } from 'framer-motion';
 
 const TeamProfile = ({ team }) => {
   return (
-    <article className="profile">
+    <motion.article
+      className="profile"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.1 } }}
+    >
       <h2 className="profile__team-name">{team.name}</h2>
       <TeamMainInfo team={team} />
 
@@ -20,7 +26,7 @@ const TeamProfile = ({ team }) => {
           <KeyPlayers team={team} />
         </section>
       </section>
-    </article>
+    </motion.article>
   );
 };
 

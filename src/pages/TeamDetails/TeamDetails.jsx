@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import TeamProfile from '../../components/TeamProfile/TeamProfile';
 import './TeamDetails.css';
 import { TeamsContext } from '../../context/TeamsContext';
+import { motion } from 'framer-motion';
 
 const TeamDetails = () => {
   const { teams } = useContext(TeamsContext);
@@ -12,9 +13,14 @@ const TeamDetails = () => {
 
   if (team)
     return (
-      <section className="team-details">
+      <motion.section
+        className="team-details"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
         <TeamProfile team={team} />
-      </section>
+      </motion.section>
     );
 };
 

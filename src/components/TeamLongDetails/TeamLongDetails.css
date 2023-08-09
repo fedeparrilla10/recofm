@@ -1,0 +1,8 @@
+.team-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  gap: 15px;
+}

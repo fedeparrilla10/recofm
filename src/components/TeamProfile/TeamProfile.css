@@ -7,9 +7,10 @@
   padding: 45px;
 }
 
-.team__name {
+.profile__team-name {
   font-size: 36px;
   text-transform: uppercase;
+  letter-spacing: 2.5px;
 }
 
 .profile__content {
@@ -19,16 +20,7 @@
   gap: 20px;
 }
 
-.details {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 30%;
-  gap: 15px;
-}
-
-.first-team-details {
+.profile__first-team-details {
   display: flex;
   flex-direction: column;
   gap: 30px;

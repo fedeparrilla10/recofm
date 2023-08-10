@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Header from '../../core/Header/Header';
+import Header from '../../components/Header/Header';
 import Button from '../../components/Button/Button';
 import CardList from '../../components/CardList/CardList';
 import { ALL_SAVES } from '../../constants/filters';

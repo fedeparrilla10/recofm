@@ -13,7 +13,6 @@ const Team = ({ team }) => {
           alt={`Escudo de ${team.name}`}
         />
       </div>
-      <p className="team__details">{team.details}</p>
 
       <Link to={`../team/${team.id}`}>
         <Button name="Ver detalles" className="button button--medium" />

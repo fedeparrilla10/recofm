@@ -1,3 +1,4 @@
+import KeyList from '../KeyList/KeyList';
 import './TeamMainInfo.css';
 
 const TeamMainInfo = ({ team }) => {
@@ -9,13 +10,7 @@ const TeamMainInfo = ({ team }) => {
         alt={`Escudo de ${team.name}`}
       />
 
-      <div className="team__key">
-        <ul className="team__key__list">
-          {team.key_points.map((keyPoint, i) => {
-            return <li key={i}>✔️ {keyPoint}</li>;
-          })}
-        </ul>
-      </div>
+      <KeyList team={team} />
 
       <img
         className="team__league"

@@ -1,8 +1,8 @@
-import { useMediaQuery } from 'react-responsive';
+import { useIsMobile } from '../../constants/mediaqueries';
 import './Card.css';
 
 const Card = ({ title, content }) => {
-  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+  const isMobile = useIsMobile();
 
   return (
     <div className="card">

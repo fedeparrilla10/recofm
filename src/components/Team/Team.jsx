@@ -1,17 +1,15 @@
 import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
 import KeyList from '../KeyList/KeyList';
-import { useMediaQuery } from 'react-responsive';
+import {
+  useIsDesktop,
+  useIsMobileOrTablet,
+} from '../../constants/mediaqueries';
 import './Team.css';
 
 const Team = ({ team }) => {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1280px)',
-  });
-
-  const isTabletOrMobile = useMediaQuery({
-    query: '(max-width: 1280px)',
-  });
+  const isDesktop = useIsDesktop();
+  const isTabletOrMobile = useIsMobileOrTablet();
 
   return (
     <article className="team__container">
@@ -24,7 +22,7 @@ const Team = ({ team }) => {
         />
       </div>
 
-      {isDesktopOrLaptop && <p className="team__details">{team.details}</p>}
+      {isDesktop && <p className="team__details">{team.details}</p>}
 
       {isTabletOrMobile && <KeyList team={team} />}
 

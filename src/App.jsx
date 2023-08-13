@@ -2,8 +2,6 @@ import NavBar from './core/NavBar/NavBar';
 import { TeamsContext } from './context/TeamsContext';
 import { useContext, useState } from 'react';
 import RoutesWithAnimation from './core/RoutesWithAnimation/RoutesWithAnimation';
-
-// import Footer from './core/Footer/Footer';
 import './App.css';
 
 const App = () => {
@@ -25,7 +23,6 @@ const App = () => {
     <div className="container">
       <NavBar />
       <RoutesWithAnimation team={team} randomTeam={randomTeam} />
-      {/* <Footer /> */}
     </div>
   );
 };

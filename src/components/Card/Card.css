@@ -4,12 +4,20 @@
   align-items: center;
   gap: 20px;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   background-color: var(--card-color);
 }
 
+.card__img {
+  height: 300px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
 .card__title {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .card__content {
@@ -18,7 +26,7 @@
 
 @media (min-width: 1280px) {
   .card {
-    height: 250px;
-    width: 300px;
+    height: 540px;
+    width: 370px;
   }
 }

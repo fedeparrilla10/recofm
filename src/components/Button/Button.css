@@ -1,7 +1,7 @@
 .button {
   cursor: pointer;
   color: var(--primary-color);
-  background-color: #522786;
+  background-color: var(--dark-purple);
   border: none;
   border-radius: 10px;
   text-transform: uppercase;

@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Button from '../../components/Button/Button';
-import CardList from '../../components/CardList/CardList';
-import { ALL_SAVES } from '../../constants/filters';
 import { motion } from 'framer-motion';
 import './Home.css';
 
@@ -17,7 +15,7 @@ const Home = () => {
       <Header />
 
       <div className="buttons">
-        <Link to={`random_team/${ALL_SAVES}`}>
+        <Link to="randomizer">
           <Button name="Randomizer" className="button button--big" />
         </Link>
 
@@ -25,8 +23,6 @@ const Home = () => {
           <Button name="Recomendaciones" className="button button--big" />
         </Link>
       </div>
-
-      <CardList />
     </motion.main>
   );
 };

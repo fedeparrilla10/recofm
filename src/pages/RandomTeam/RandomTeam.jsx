@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import TeamProfile from '../../components/TeamProfile/TeamProfile';
-import './RandomTeam.css';
+import { Link } from 'react-router-dom';
 import { TeamsContext } from '../../context/TeamsContext';
 import {
   ALL_SAVES,
@@ -11,6 +11,7 @@ import {
   LLM_SAVES,
 } from '../../constants/filters';
 import { motion } from 'framer-motion';
+import './RandomTeam.css';
 
 const RandomTeam = ({ team, randomTeam }) => {
   const { teams } = useContext(TeamsContext);
@@ -36,21 +37,26 @@ const RandomTeam = ({ team, randomTeam }) => {
     >
       {!loading && team && <TeamProfile team={team} />}
       {!loading && (
-        <Button
-          onClick={() => {
-            if (type === ALL_SAVES) {
-              randomTeam();
-            } else if (type === FAST_SAVES) {
-              randomTeam(FAST_SAVES);
-            } else if (type === LONG_SAVES) {
-              randomTeam(LONG_SAVES);
-            } else if (type === LLM_SAVES) {
-              randomTeam(LLM_SAVES);
-            }
-          }}
-          name="Otro Equipo"
-          className="button button--medium"
-        />
+        <div className="random-team__buttons">
+          <Link to="/randomizer">
+            <Button name="Atrás" className="button button--medium" />
+          </Link>
+          <Button
+            onClick={() => {
+              if (type === ALL_SAVES) {
+                randomTeam();
+              } else if (type === FAST_SAVES) {
+                randomTeam(FAST_SAVES);
+              } else if (type === LONG_SAVES) {
+                randomTeam(LONG_SAVES);
+              } else if (type === LLM_SAVES) {
+                randomTeam(LLM_SAVES);
+              }
+            }}
+            name="Otro Equipo"
+            className="button button--medium"
+          />
+        </div>
       )}
     </motion.section>
   );

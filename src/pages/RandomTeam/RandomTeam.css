@@ -6,3 +6,8 @@
   margin-top: 20px;
   /* justify-content: center; */
 }
+
+.random-team__buttons {
+  display: flex;
+  gap: 20px;
+}

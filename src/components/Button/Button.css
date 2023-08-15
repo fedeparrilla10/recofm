@@ -19,5 +19,5 @@
 }
 
 .button--big:hover {
-  box-shadow: 0 0 10px 10px rgb(113, 0, 157, 0.2);
+  box-shadow: 0 0 6px 6px rgb(113, 0, 157, 0.2);
 }

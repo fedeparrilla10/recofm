@@ -15,3 +15,9 @@
 .kit__img {
   height: 180px;
 }
+
+@media (min-width: 1280px) {
+  .kits {
+    width: 500px;
+  }
+}

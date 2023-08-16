@@ -2,5 +2,21 @@
   width: 50%;
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   align-items: center;
+}
+
+.team__league {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .team-main-info {
+    flex-direction: row;
+  }
+
+  .team__league {
+    height: auto;
+    display: block;
+  }
 }

@@ -5,8 +5,3 @@
   justify-content: space-between;
   padding: 15px 5%;
 }
-
-.navbar__list {
-  display: flex;
-  gap: 20px;
-}

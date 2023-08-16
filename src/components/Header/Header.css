@@ -21,7 +21,7 @@
   font-weight: bold;
   font-style: italic;
   display: none;
-  color: var(--lightviolet);
+  color: var(--lightblue);
 }
 
 @media (min-width: 1280px) {

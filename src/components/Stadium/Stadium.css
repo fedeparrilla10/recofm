@@ -1,16 +1,16 @@
 .stadium {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .stadium__name {
-    text-align: center;
-  }
-  
-  .stadium__img {
-    border-radius: 30px;
-    width: 600px;
-    height: auto;
-    object-fit: cover;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stadium__name {
+  text-align: center;
+}
+
+.stadium__img {
+  border-radius: 30px;
+  width: 600px;
+  height: auto;
+  object-fit: cover;
+}

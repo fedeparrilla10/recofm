@@ -2,10 +2,10 @@
 
 :root {
   --title-font: 'Lexend', sans-serif;
-  --primary-color: #e9e9e9;
-  --card-color: #1d0e2f;
+  --primary-color: #f8f8f8;
+  --darkest-purple: #230e38;
   --dark-purple: #6a32ae;
-  --lightviolet: #d2adff;
+  --lightblue: #7af6ff;
 }
 
 /* makes sizing simpler */

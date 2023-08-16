@@ -1,12 +1,11 @@
 .button {
   cursor: pointer;
   color: var(--primary-color);
-  background: linear-gradient(90deg, #590a89 0%, #340f56 100%);
-  border: none;
-  border-radius: 10px;
+  background: var(--darkest-purple);
+  border: 2px solid var(--lightblue);
+  border-radius: 5px;
   text-transform: uppercase;
   transition: transform ease 0.2s, box-shadow ease 0.2s;
-  font-weight: bold;
   letter-spacing: 0.5px;
 }
 

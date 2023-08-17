@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import githubIcon from '../../assets/github_icon.svg';
-import ballIcon from '../../assets/ball.svg';
 import './NavBar.css';
 
 const NavBar = () => {

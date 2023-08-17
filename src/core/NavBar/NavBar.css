@@ -2,6 +2,11 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 15px 5%;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.github {
+  height: 25px;
+  width: 30px;
 }

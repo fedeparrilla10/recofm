@@ -1,5 +1,5 @@
 .team__container {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,10 +9,14 @@
 
 .team__info {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.team__name {
+  font-size: 20px;
 }
 
 .team__logo {
@@ -21,7 +25,8 @@
 
 @media (min-width: 1280px) {
   .team__container {
-    flex-direction: row;
+    width: 20%;
+    flex-direction: column;
     gap: 30px;
   }
 
@@ -34,6 +39,6 @@
   }
 
   .team__logo {
-    height: auto;
+    height: 120px;
   }
 }

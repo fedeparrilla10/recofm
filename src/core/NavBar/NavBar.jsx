@@ -1,4 +1,6 @@
 import { NavLink } from 'react-router-dom';
+import githubIcon from '../../assets/github_icon.svg';
+import ballIcon from '../../assets/ball.svg';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -17,7 +19,7 @@ const NavBar = () => {
       <ul className="navbar__list">
         <li>
           <NavLink>
-            <p>GitHub</p>
+            <img className="github" src={githubIcon} alt="Ícono de GitHub" />
           </NavLink>
         </li>
       </ul>

@@ -10,13 +10,13 @@
   display: none;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 767px) {
   .team-main-info {
     flex-direction: row;
   }
 
   .team__league {
-    height: auto;
+    height: 95px;
     display: block;
   }
 }

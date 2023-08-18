@@ -3,6 +3,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 30%;
   gap: 15px;
+  padding: 0 35px;
+}
+
+@media (min-width: 1280px) {
+  .team-description {
+    width: 30%;
+  }
 }

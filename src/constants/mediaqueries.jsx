@@ -11,3 +11,7 @@ export const useIsMobileOrTablet = () => {
 export const useIsDesktop = () => {
   return useMediaQuery({ query: '(min-width: 1280px' });
 };
+
+export const useIsFullHD = () => {
+  return useMediaQuery({ query: '(min-width: 1920px' });
+};

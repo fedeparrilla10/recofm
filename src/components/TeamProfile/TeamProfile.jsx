@@ -3,13 +3,10 @@ import Stadium from '../Stadium/Stadium';
 import Kits from '../Kits/Kits';
 import KeyPlayers from '../KeyPlayers/KeyPlayers';
 import TeamLongDetails from '../TeamLongDetails/TeamLongDetails';
-import { useIsMobile } from '../../constants/mediaqueries';
 import { motion } from 'framer-motion';
 import './TeamProfile.css';
 
 const TeamProfile = ({ team }) => {
-  const isMobile = useIsMobile();
-
   return (
     <motion.article
       className="profile"

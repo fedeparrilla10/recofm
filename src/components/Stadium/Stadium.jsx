@@ -1,6 +1,7 @@
 import './Stadium.css';
 
 const Stadium = ({ team }) => {
+
   return (
     <div className="stadium">
       <h4 className="stadium__name">{team.stadium.name}</h4>

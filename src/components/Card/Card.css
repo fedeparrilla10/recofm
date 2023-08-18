@@ -4,20 +4,17 @@
   align-items: center;
   gap: 20px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 20px;
   background: var(--darkest-purple);
 }
 
 .card__img {
-  height: 300px;
-  width: 350px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  display: none;
 }
 
 .card__title {
-  font-size: 30px;
+  font-size: 22px;
+  text-align: center;
 }
 
 .card__content {
@@ -28,5 +25,23 @@
   .card {
     height: 540px;
     width: 370px;
+    padding: 10px;
+  }
+
+  .card__img {
+    display: block;
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card__title {
+    font-size: 30px;
+  }
+
+  .card__content {
+    text-align: center;
   }
 }

@@ -6,7 +6,9 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <NavLink to="/">
-        <h2>RecoFM</h2>
+        <h2>
+          <span className="r--navbar">R</span>ecoFM
+        </h2>
       </NavLink>
 
       <ul className="navbar__list">
@@ -17,7 +19,10 @@ const NavBar = () => {
 
       <ul className="navbar__list">
         <li>
-          <NavLink>
+          <NavLink
+            to="https://github.com/fedeparrilla10/recofm"
+            target="_blank"
+          >
             <img className="github" src={githubIcon} alt="Ícono de GitHub" />
           </NavLink>
         </li>

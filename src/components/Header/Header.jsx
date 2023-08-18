@@ -4,7 +4,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__titles">
-        <h1 className="header__title">RecoFM</h1>
+        <h1 className="header__title">
+          <span className="r">R</span>ecoFM
+        </h1>
         <h3 className="header__subtitle">
           Ayudándote a tomar decisiones{' '}
           <span className="header__subtitle--strong">realmente</span> difíciles

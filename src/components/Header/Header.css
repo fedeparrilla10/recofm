@@ -13,6 +13,11 @@
   color: var(--primary-color);
 }
 
+.r {
+  color: var(--lightblue);
+  font-size: 140px;
+}
+
 .header__subtitle {
   font-size: 28px;
 }

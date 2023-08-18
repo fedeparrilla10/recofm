@@ -1,19 +1,25 @@
 .kits {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
 }
 
-.kit {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
+@media (min-width: 767px) {
+  .kits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.kit__img {
-  height: 180px;
+  .kit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .kit__img {
+    height: 180px;
+  }
 }
 
 @media (min-width: 1280px) {

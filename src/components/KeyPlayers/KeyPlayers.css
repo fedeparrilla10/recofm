@@ -1,21 +1,27 @@
 .key-players {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: none;
 }
 
-.players {
-  display: flex;
-  flex-direction: row;
-}
+@media (min-width: 1280px) {
+  .key-players {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.player {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
+  .players {
+    display: flex;
+    flex-direction: row;
+  }
 
-.player__img {
-  height: 150px;
+  .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .player__img {
+    height: 150px;
+  }
 }

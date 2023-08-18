@@ -4,11 +4,14 @@
   justify-content: center;
   flex-direction: column;
   gap: 15px;
-  padding: 0 35px;
+  padding: 0 85px;
+  text-align: center;
 }
 
 @media (min-width: 1280px) {
   .team-description {
     width: 30%;
+    padding: 0px;
+    text-align: left;
   }
 }

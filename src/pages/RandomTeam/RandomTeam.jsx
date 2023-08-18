@@ -10,6 +10,7 @@ import {
   LONG_SAVES,
   LLM_SAVES,
 } from '../../constants/filters';
+import { useIsMobile } from '../../constants/mediaqueries';
 import { motion } from 'framer-motion';
 import './RandomTeam.css';
 
@@ -17,6 +18,7 @@ const RandomTeam = ({ team, randomTeam }) => {
   const { teams } = useContext(TeamsContext);
   const [loading, setLoading] = useState(true);
   const { type } = useParams();
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     if (teams.length > 0) {
@@ -39,7 +41,12 @@ const RandomTeam = ({ team, randomTeam }) => {
       {!loading && (
         <div className="random-team__buttons">
           <Link to="/randomizer">
-            <Button name="Atrás" className="button button--medium" />
+            <Button
+              name="Atrás"
+              className={
+                isMobile ? 'button button--small' : 'button button--medium'
+              }
+            />
           </Link>
           <Button
             onClick={() => {
@@ -54,7 +61,7 @@ const RandomTeam = ({ team, randomTeam }) => {
               }
             }}
             name="Otro Equipo"
-            className="button button--medium"
+            className={'button button--medium'}
           />
         </div>
       )}

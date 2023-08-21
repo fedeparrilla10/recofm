@@ -1,11 +1,14 @@
 import { useContext } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import TeamProfile from '../../components/TeamProfile/TeamProfile';
-import './TeamDetails.css';
+import Button from '../../components/Button/Button';
+import { useIsMobile } from '../../constants/mediaqueries';
 import { TeamsContext } from '../../context/TeamsContext';
 import { motion } from 'framer-motion';
+import './TeamDetails.css';
 
 const TeamDetails = () => {
+  const isMobile = useIsMobile();
   const { teams } = useContext(TeamsContext);
 
   const { id } = useParams();
@@ -20,6 +23,15 @@ const TeamDetails = () => {
         exit={{ opacity: 0, transition: { duration: 0.1 } }}
       >
         <TeamProfile team={team} />
+
+        <Link to="/teams">
+          <Button
+            name="Atrás"
+            className={
+              isMobile ? 'button button--small' : 'button button--medium'
+            }
+          />
+        </Link>
       </motion.section>
     );
 };

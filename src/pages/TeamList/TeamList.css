@@ -7,11 +7,23 @@
   gap: 20px;
 }
 
+.teamlist__teams {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 @media (min-width: 767px) {
   .teamlist {
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
     width: 55%;
+  }
+
+  .teamlist__teams {
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }

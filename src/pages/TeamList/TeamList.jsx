@@ -22,15 +22,14 @@ const TeamList = () => {
 
   return (
     <>
-      <Filter filter={filter} setFilter={setFilter} />
-
       <motion.section
         className="teamlist"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0, transition: { duration: 0.1 } }}
       >
-        {filterTeams}
+        <Filter filter={filter} setFilter={setFilter} />
+        <div className="teamlist__teams">{filterTeams}</div>
       </motion.section>
     </>
   );

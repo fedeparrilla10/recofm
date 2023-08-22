@@ -1,17 +1,18 @@
 import { useState, useContext } from 'react';
 import Team from '../../components/Team/Team';
 import Filter from '../../components/Filter/Filter';
+import { ALL_SAVES } from '../../constants/filters';
 import { TeamsContext } from '../../context/TeamsContext';
 import { motion } from 'framer-motion';
 import './TeamList.css';
 
 const TeamList = () => {
-  const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState(ALL_SAVES);
   const { teams } = useContext(TeamsContext);
 
   const filterTeams = teams
     .filter((team) => {
-      return filter === '' || filter === 'all'
+      return filter === '' || filter === ALL_SAVES
         ? team
         : team.difficulty === filter;
     })

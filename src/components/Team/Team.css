@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  width: 200px;
 }
 
 .team__info {
@@ -24,17 +25,8 @@
 
 @media (min-width: 1280px) {
   .team__container {
-    width: 20%;
     flex-direction: column;
-    gap: 30px;
-  }
-
-  .team__info {
-    flex-direction: column;
-  }
-
-  .team__details {
-    width: 50%;
+    gap: 15px;
   }
 
   .team__logo {

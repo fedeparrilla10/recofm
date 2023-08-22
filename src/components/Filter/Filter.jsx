@@ -1,4 +1,7 @@
-const Filter = ({ setFilter }) => {
+import { ALL_SAVES } from '../../constants/filters';
+import './Filter.css';
+
+const Filter = ({ filter, setFilter }) => {
   return (
     <div className="inputs">
       <div className="input">
@@ -7,6 +10,7 @@ const Filter = ({ setFilter }) => {
           name="saveType"
           id="all"
           value="all"
+          checked={filter === ALL_SAVES}
           onChange={(e) => setFilter(e.target.value)}
         />
         <label htmlFor="all">Todos</label>

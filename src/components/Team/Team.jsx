@@ -15,7 +15,7 @@ const Team = ({ team }) => {
       </div>
 
       <Link to={`../team/${team.id}`}>
-        <Button name="Ver Detalles" className="button button--small" />
+        <Button name="Detalles" className="button button--small" />
       </Link>
     </article>
   );

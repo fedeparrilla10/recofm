@@ -1,0 +1,14 @@
+.input {
+  display: flex;
+  gap: 5px;
+}
+
+@media (min-width: 1280px) {
+  .inputs {
+    display: flex;
+    gap: 40px;
+    background: var(--darkest-purple);
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+}

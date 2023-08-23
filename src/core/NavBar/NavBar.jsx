@@ -5,7 +5,7 @@ import './NavBar.css';
 const NavBar = () => {
   return (
     <nav className="navbar">
-      <NavLink to="/">
+      <NavLink to="/recofm">
         <h2>
           <span className="r--navbar">R</span>ecoFM
         </h2>
@@ -13,7 +13,7 @@ const NavBar = () => {
 
       <ul className="navbar__list">
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/recofm">Home</NavLink>
         </li>
       </ul>
 

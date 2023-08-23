@@ -24,7 +24,7 @@ const TeamDetails = () => {
       >
         <TeamProfile team={team} />
 
-        <Link to="/teams">
+        <Link to="/recofm/teams">
           <Button
             name="Atrás"
             className={

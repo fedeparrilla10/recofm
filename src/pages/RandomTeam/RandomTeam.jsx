@@ -40,7 +40,7 @@ const RandomTeam = ({ team, randomTeam }) => {
       {!loading && team && <TeamProfile team={team} />}
       {!loading && (
         <div className="random-team__buttons">
-          <Link to="/randomizer">
+          <Link to="/recofm/randomizer">
             <Button
               name="Atrás"
               className={

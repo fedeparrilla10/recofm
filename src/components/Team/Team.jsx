@@ -14,7 +14,7 @@ const Team = ({ team }) => {
         />
       </div>
 
-      <Link to={`../team/${team.id}`}>
+      <Link to={`/recofm/team/${team.id}`}>
         <Button name="Detalles" className="button button--small" />
       </Link>
     </article>

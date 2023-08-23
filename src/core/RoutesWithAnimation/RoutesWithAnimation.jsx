@@ -13,12 +13,12 @@ const RoutesWithAnimation = ({ team, randomTeam }) => {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.key}>
-        <Route path="/" element={<Home />} />
-        <Route path="randomizer" element={<Randomizer />} />
-        <Route path="teams" element={<TeamList />} />
-        <Route path="team/:id" element={<TeamDetails />} />
+        <Route path="/recofm" element={<Home />} />
+        <Route path="recofm/randomizer" element={<Randomizer />} />
+        <Route path="recofm/teams" element={<TeamList />} />
+        <Route path="recofm/team/:id" element={<TeamDetails />} />
         <Route
-          path="random_team/:type"
+          path="recofm/random_team/:type"
           element={<RandomTeam team={team} randomTeam={randomTeam} />}
         />
       </Routes>

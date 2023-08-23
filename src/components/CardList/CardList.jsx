@@ -25,24 +25,24 @@ import './CardList.css';
 const CardList = () => {
   return (
     <section className="cards">
-      <Link to={`/random_team/${ALL_SAVES}`}>
+      <Link to={`/recofm/random_team/${ALL_SAVES}`}>
         <Card title={ALL_SAVE_TITLE} content={ALL_SAVE_CONTENT} image={pitch} />
       </Link>
-      <Link to={`/random_team/${FAST_SAVES}`}>
+      <Link to={`/recofm/random_team/${FAST_SAVES}`}>
         <Card
           title={FAST_SAVE_TITLE}
           content={FAST_SAVE_CONTENT}
           image={arsenalutd}
         />
       </Link>
-      <Link to={`/random_team/${LONG_SAVES}`}>
+      <Link to={`/recofm/random_team/${LONG_SAVES}`}>
         <Card
           title={LONG_SAVE_TITLE}
           content={LONG_SAVE_CONTENT}
           image={willi1}
         />
       </Link>
-      <Link to={`/random_team/${LLM_SAVES}`}>
+      <Link to={`/recofm/random_team/${LLM_SAVES}`}>
         <Card title={LLM_SAVE_TITLE} content={LLM_SAVE_CONTENT} image={llm1} />
       </Link>
     </section>

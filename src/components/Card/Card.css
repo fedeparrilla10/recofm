@@ -23,9 +23,8 @@
 
 @media (min-width: 1280px) {
   .card {
-    height: 540px;
-    width: 370px;
-    padding: 10px;
+    height: 570px;
+    width: 300px;
   }
 
   .card__img {
@@ -43,5 +42,13 @@
 
   .card__content {
     text-align: center;
+  }
+}
+
+@media (min-width: 1600px) {
+  .card {
+    height: 540px;
+    width: 370px;
+    padding: 10px;
   }
 }
